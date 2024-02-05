@@ -10,7 +10,7 @@ howto = True
 pygame.init()
 pygame.mixer.init()
 
-W, H = 800, 437  # these are the measurements of the bg.png file
+W, H = 850, 445  # these are the measurements of the bg.png file
 win = pygame.display.set_mode((W, H))
 pygame.display.set_caption("peep")
 
@@ -202,7 +202,7 @@ class player(object):  # tim
                     self.y + 3,
                     self.width - 8,
                     self.height - 35,
-                )  # changes the hitbox for sliding
+                )  # changes the hitbox for slidding
 
             if self.slideCount >= 110:
                 self.slideCount = 0
@@ -242,7 +242,7 @@ class saw(object):
         pygame.image.load(os.path.join("images", "SAW3.png")),
     ]  # saw animation
 
-    def __init__(self, x, y, width, height):  # sets initial attributes
+    def __init__(self, x, y, width, height):  # sets inital attributes
         self.x = x
         self.y = y
         self.width = width
