@@ -1,5 +1,0 @@
-open powershell run python setup.py build
-
-*need cx_freeze pip installed 
-** is already on my pc
-*** not on a pc by defualt
